@@ -75,6 +75,34 @@ body{
     height: 630px;
     cursor: pointer;
 }
+.body{
+    position: relative;
+}
+.img-icon{
+    position: absolute;
+    bottom: 50px;
+    left: 680px;
+    opacity: 0;
+    animation: scroldown 2s linear infinite forwards;
+}
+@keyframes scroldown {
+    from{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(30px);
+        opacity: 1;
+    }
+}
+.scrol-down{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+#down{
+    padding-left: 10px;
+}
 /* body section end */
 /* body section1 starts */
 .body-sec1{
